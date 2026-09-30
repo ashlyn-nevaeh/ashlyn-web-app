@@ -1,0 +1,30 @@
+footer {
+    background-color:rgb(148, 148, 247);
+    font-family: Arial;
+    color: rgb(0, 0, 146);
+    padding: 10px;
+    border: 1px dashed rgb(0, 0, 146);
+}
+#notice {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headline {
+    color:rgb(0, 70, 47);
+    border-bottom: 1px dotted rgb(0, 0, 88);
+}
+h1 {
+    font-size: 4em;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 2px rgb(0, 0, 88);
+    background-color: rgb(148, 148, 247, 0.5);
+}
+#section {
+    font-family: Arial;
+    color: red;
+    font-size: 1em;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(0, 0, 88);
+    width: 80%;
+}
