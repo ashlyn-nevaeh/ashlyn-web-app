@@ -1,0 +1,14 @@
+a:link {
+    background-color: rgba(0, 0, 117, 0.175);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(1, 0, 1, 0.219);
+    text-decoration: underline;
+}
+
+a:visited {
+    background-color: rgba(137, 43, 226, 0.21);
+    text-decoration: none;
+}
