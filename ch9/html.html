@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trip Request</title>
+        <link rel="stylesheet" href="ch9lab.css">
+    </head>
+    <body>
+        <h1>Request a Trip</h1>
+        <form id="request" method="post">
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" accesskey="n" tabindex="1" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="blog">Your Travel Blog (optional):</label>
+                <input type="url" id="blog" name="blog" placeholder="https://">
+            </p>
+            <p>
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers" min="1" max="12" value="2">
+            </p>
+            <p>
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" min="2027-01-01">
+            </p>
+            <p>
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" min="500" max="5000" step="100" value="2500">
+            </p>
+            <p>
+                <label for="color">Pick a color:</label>
+                <input type="color" id="color" name="color">
+            </p>
+            <p>
+                <label for="city">Favorite city:</label>
+                <input type="text" id="city" name="favorite_city" list="city-suggestions" placeholder="Type or select a city">
+                <datalist id="city-suggestions">
+                    <option value="Paris"></option>
+                    <option value="Tokyo"></option>
+                    <option value="New York"></option>
+                    <option value="Sydney"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="postal_code" pattern="[0-9]{5}(-[0-9]{4})?" title="Please enter a 5-digit ZIP code or 5+4 format (e.g., 12345 or 12345-6789)">
+            </p>
+            <p>
+               <button type="submit">Send</button>
+            </p>
+        </form>
+    </body>
+</html>

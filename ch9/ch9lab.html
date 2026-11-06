@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trip Inquiry</title>
+        <link rel="stylesheet" href="ch9lab.css">
+    </head>
+    <body>
+        <h1>Plan Your Trip</h1>
+        <form id="inquiry" method="post" action="#">
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" accesskey="n" tabindex="1" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination">
+                    <optgroup label="Europe">
+                        <option value="France" selected>France</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="Japan">Japan</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="India">India</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Travel style</legend>
+                    <input type="radio" id="adventurous" name="travel_style" value="adventurous" checked>
+                    <label for="adventurous">Adventurous</label>
+                    <input type="radio" id="relaxed" name="travel_style" value="relaxed">
+                    <label for="relaxed">Relaxed</label>
+                    <input type="radio" id="cultural" name="travel_style" value="cultural">
+                    <label for="cultural">Cultural</label>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Extras</legend>
+                    <input type="radio" id="Historic" name="travel_extras" value="Historic" checked>
+                    <label for="Historic">Historic</label>
+                    <input type="radio" id="Beach" name="travel_extras" value="Beach">
+                    <label for="Beach">Beach</label>
+                    <input type="radio" id="Mountains" name="travel_extras" value="Mountains">
+                    <label for="Mountains">Mountains</label>
+                </fieldset>
+            </p>
+            <p>
+                <label for="comments">Questions and Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type your questions or comments here..."></textarea>
+                <input type="image" src="images/send-button-blue-color-isolated-vector.jpg" alt="Send your inquiry" width="100" height="50">
+            </p>
+        </form>
+    </body>
+</html>
